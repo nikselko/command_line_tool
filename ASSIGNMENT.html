@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="keywords" content="C++, SOLID, OOP" />
+  <title>Advanced Programming Concepts</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 11pt;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 60%;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Advanced Programming Concepts</h1>
+</header>
+<h1 id="assignment-1">Assignment 1</h1>
+<h2 id="introduction">Introduction</h2>
+<p><em>Command line arguments</em> are arguments that are passed by the environment to a program when it starts. For instance, the shell command <code>cp</code> used to copy files and directories, can be invoked with:</p>
+<pre class="shell"><code>cp -f --recursive ./doc/ ./arch/ </code></pre>
+<p>This command will copy the <em>doc</em> directory and its content into the <em>arch</em> directory. If the directory structure before executing the command looked like this:</p>
+<pre class="text"><code>my_dir/
++-- doc/
+|  +-- MANUAL.md
+|  +-- ref/
+|     +-- links.md
++-- arch/
+|  +-- ARCH.md 
++-- README.md</code></pre>
+<p>After the copy it will become:</p>
+<pre class="text"><code>my_dir/
++-- doc/
+|  +-- MANUAL.md
+|  +-- ref/
+|     +-- links.md
++-- arch/
+|  +-- doc/
+|     +-- MANUAL.md
+|     +-- ref/
+|        +-- links.md
+|  +-- ARCH.md 
++-- README.md</code></pre>
+<p>In the command:</p>
+<pre class="shell"><code>cp -f --recursive ./doc/ ./arch/ </code></pre>
+<ul>
+<li><code>cp</code> is the program’s name</li>
+<li><code>-f</code> is an <strong>option</strong> in its short form (its long form is <code>--force</code>)</li>
+<li><code>--recursive</code> is an <strong>option</strong> in its long form (its short form is <code>-R</code>)</li>
+<li><code>./doc/</code> and <code>./arch/</code> are <strong>positional arguments</strong></li>
+</ul>
+<p>Traditionally, options can be specified in long or short forms. The short ones are one-character codes prefixed with a <em>minus sign</em> <code>-</code>. The long ones are usually very descriptive (e.g.: <code>--preserve-extended-attributes</code>) and prefixed with a double <em>minus sign</em> <code>--</code>.</p>
+<p>Options can take additional arguments. The command <code>tar</code> that creates archives (think something like <code>zip</code> or <code>rar</code>) from multiple files has an option <code>--file</code> to specify the file name of the output file.</p>
+<p>The following command creates a new archive with the content of the <code>./arch/</code> directory and saves it to <em>arch.tar</em> file. Here <code>--create</code> is an <strong><em>option</em></strong> with no arguments and <code>--file</code> is an <strong><em>option</em></strong> with one argument <code>arch.tar</code>. Finally, <code>./arch/</code> is a <em><strong>positional argument</strong></em>.</p>
+<pre class="shell"><code>tar --create --file arch.tar ./arch/</code></pre>
+<p>Sometimes options that take arguments are followed by the equality symbol <code>=</code>:</p>
+<pre class="shell"><code>tar --create --file=arch.tar ./arch/</code></pre>
+<p>Some commands support both styles (like <code>tar</code>).</p>
+<p>Whether an option should be followed by an argument depends only on how a programmer specified it. Moreover, not providing an argument to an option that requires one is an error:</p>
+<pre class="shell"><code># the following line contains an error, --file expects an argument
+tar --create --file ./arch/</code></pre>
+<p>The number of positional arguments (or their absence) also depends on how a program is specified. For many commands the positional arguments are linked to the options. For instance for some combination of options only one positional argument is needed, while for another three should be provided.</p>
+<h2 id="receiving-arguments-in-programs">Receiving arguments in programs</h2>
+<p>Arguments passed to a program appear as arguments to the <code>main</code> function:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">(</span><span class="dt">int</span> argc<span class="op">,</span> <span class="dt">char</span><span class="op">*</span> argv<span class="op">[]);</span></span></code></pre></div>
+<ul>
+<li><code>argc</code> is the number of arguments passed to program</li>
+<li><code>argv</code> is an array of <code>argc</code> character strings (<code>char*</code>), each string corresponding to one argument.</li>
+</ul>
+<p>On most systems the first argument is the program’s name, consequently <code>argc</code> is at least 1.</p>
+<p>Assuming that a program is called <code>my_app</code> (or <code>my_app.exe</code> on Windows) and run as follows:</p>
+<pre class="shell"><code>./my_app --verbose -l 0.8 --input in.txt</code></pre>
+<p>The following <code>main</code> function of <code>my_app</code>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;iostream&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">(</span><span class="dt">int</span> args<span class="op">,</span> <span class="dt">char</span><span class="op">*</span> argv<span class="op">[]){</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i<span class="op">=</span><span class="dv">0</span><span class="op">;</span> i<span class="op">&lt;</span>argc<span class="op">;</span> <span class="op">++</span>i<span class="op">){</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">std::</span>cout<span class="op"> &lt;&lt;</span> i <span class="op">&lt;&lt;</span> <span class="st">&quot;: &quot;</span> <span class="op">&lt;&lt;</span> argv<span class="op">[</span>i<span class="op">]</span> <span class="op">&lt;&lt;</span> <span class="ch">&#39;</span><span class="sc">\n</span><span class="ch">&#39;</span><span class="op">;</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+<p>would print:</p>
+<pre class="text"><code>0: ./my_app
+1: --verbose
+2: -l
+3: 0.8
+4: --input
+5: in.txt</code></pre>
+<p>As you can see, arguments are split on white spaces by the system that, subsequently, forwards them to the program.</p>
+<h2 id="lib_args"><code>lib_args</code></h2>
+<p><code>lib_args</code> is a library that <em>attempts</em> to simplify the way <em>command line arguments</em> are parsed and accepted by programs. The code below shows its example usage:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">(</span><span class="dt">int</span> argc<span class="op">,</span> <span class="dt">char</span> <span class="op">*</span>argv<span class="op">[])</span> <span class="op">{</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// lib_arg accepts a whole string instead of an array of arguments</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// here this string is created by concatenating arguments</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">std::</span>ostringstream<span class="op"> </span>oss<span class="op">{};</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> arg_no <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> arg_no <span class="op">&lt;</span> argc<span class="op">;</span> <span class="op">++</span> arg_no<span class="op">){</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>        oss <span class="op">&lt;&lt;</span> argv<span class="op">[</span>arg_no<span class="op">]</span> <span class="op">&lt;&lt;</span> <span class="ch">&#39; &#39;</span><span class="op">;</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">// this creates a set of options to be recognized by lib_argc for this program</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">// the format for this is:</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>    <span class="co">// {short_option_form, long_option_form, does_option_need_an_argument, what_kind_of_argument_it_needs}</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">// there are only three argument kinds accepted by options: text, int or float</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>    add_option<span class="op">({</span><span class="ch">&#39;v&#39;</span><span class="op">,</span> <span class="st">&quot;verbose&quot;</span><span class="op">,</span> <span class="st">&quot;prints verbose diagnostics&quot;</span><span class="op">,</span> <span class="kw">false</span><span class="op">,</span> pt_none<span class="op">});</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>    add_option<span class="op">({</span><span class="ch">&#39;l&#39;</span><span class="op">,</span> <span class="st">&quot;level&quot;</span><span class="op">,</span> <span class="st">&quot;sets compression level (0.0-1.0)&quot;</span><span class="op">,</span> <span class="kw">true</span><span class="op">,</span> pt_float<span class="op">});</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>    add_option<span class="op">({</span><span class="ch">&#39;i&#39;</span><span class="op">,</span> <span class="st">&quot;input&quot;</span><span class="op">,</span> <span class="st">&quot;input file name&quot;</span><span class="op">,</span> <span class="kw">true</span><span class="op">,</span> pt_text<span class="op">});</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>    add_option<span class="op">({</span><span class="ch">&#39;o&#39;</span><span class="op">,</span> <span class="st">&quot;output&quot;</span><span class="op">,</span> <span class="st">&quot;output file name&quot;</span><span class="op">,</span> <span class="kw">true</span><span class="op">,</span> pt_text<span class="op">});</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>    add_option<span class="op">({</span><span class="ch">&#39;s&#39;</span><span class="op">,</span> <span class="st">&quot;size&quot;</span><span class="op">,</span> <span class="st">&quot;dictionary size in kb (1-1000)&quot;</span><span class="op">,</span> <span class="kw">true</span><span class="op">,</span> pt_int<span class="op">});</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">// parse the arguments passed to the program using the configuration set-up with `add_option`</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="co">// the results of this call is a vector of `argument` struct&#39;s </span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">// each such a struct contains the &lt;long option form&gt; and the parsed option argument, if any </span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="kw">auto</span> arguments <span class="op">=</span> get_parser<span class="op">().</span>parse<span class="op">(</span>oss<span class="op">.</span>str<span class="op">());</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>    <span class="co">// pass the parsed arguments to the program class and run it</span></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>    program prog<span class="op">{</span>arguments<span class="op">};</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>    prog<span class="op">.</span>run<span class="op">();</span></span></code></pre></div>
+<p><code>lib_arg</code> is terribly written (just look at the code). It works by sheer luck and brute force. Your task is to fix it by applying object-oriented design principles and patterns.</p>
+<h2 id="what-to-do">What to do?</h2>
+<p>First, read and <strong>understand</strong> how the current implementation works. It’s not really that difficult. The only function that does anything substantial is <code>option_parser::parse</code>.</p>
+<p>The code is a bad mix of programming styles and paradigms. The greatest offence is, most likely, committed by three <em>free functions</em> (<code>add_option</code>, <code>print_help</code>, <code>remove_option</code>) that are <code>friend</code>s of <code>option_parser</code>. All three functions operate on a <code>static</code> instance of <code>option_parser</code> that’s defined in the source file <em>lib_args.cpp</em> and hidden from a user.</p>
+<p>Other grand offences are:</p>
+<ul>
+<li><p>not using inheritance and a common interface for <code>option</code>, different types of options (argument-less, int, text and float) should be separate classes with a common interface</p></li>
+<li><p>not using an interface for <code>option_parser</code></p></li>
+<li><p>not clearly separating responsibilities, <code>option_parser</code> should be only parsing not also adding/ removing options</p></li>
+<li><p>not using an interface and a concrete implementation for a collection of parsed options (the one that <code>option_parser::parse</code> returns) - now it’s just a vector of <code>argument</code>’s</p></li>
+<li><p>not injecting such a concrete collection of arguments into <code>program</code> through an interface</p></li>
+<li><p>clearly redundant concatenating of command-line arguments into a string before parsing them (just why?)</p></li>
+<li><p>a forced, ugly way of creating an <code>option_parser</code> object</p></li>
+<li><p>using <code>enum</code> instead of <code>enum class</code></p></li>
+<li><p>unnecessary field in <code>struct option</code> (<code>accepts_parameter</code> - field <code>pt</code> already contains the same information)</p></li>
+</ul>
+<p>… and possibly many more.</p>
+<p>After you feel comfortable with the current implementation and have played with it for a while, change it.</p>
+<h3 id="the-bare-minimum-to-get-0-14-points-total">The bare minimum (to get 0-14 points total)</h3>
+<ul>
+<li><p>Use interfaces - each concrete class that you have should implement an interface (or inherit from an abstract class).</p></li>
+<li><p>Get rid of <code>friend</code> functions - they should belong to <code>option_parser</code></p></li>
+<li><p>Get rid of the weird hidden <code>option_parser</code> instance in the source file, there’s nothing wrong with having multiple <code>option_parser</code> objects and letting a client create them.</p></li>
+<li><p>Make different options into separate classes implementing a common interface / extending a common abstract class.</p>
+<ul>
+<li><code>flag_option</code> (that’s the one with no arguments), <code>int_option</code>, <code>dbl_option</code> and <code>text_option</code> inheriting from <code>option</code> might be an idea</li>
+<li>The concrete option classes should ideally be responsible for parsing their own arguments (if they accept any).</li>
+<li>You’ll most likely get rid of the ugly <code>enum</code> while working on this point.</li>
+</ul></li>
+<li><p>Try to use an interface and a concrete class for parsed arguments instead of <code>std::vector&lt;argument&gt;</code></p>
+<ul>
+<li><code>argument</code> class is a very bad design - all those fields (<code>int_value</code>, <code>str_value</code>, <code>dbl_value</code>) shouldn’t be there.</li>
+<li>Again, a good idea would be to have an abstract class and different concrete argument classes that inherit from it and contain only the needed fields (e.g. <code>int_argument</code> that has an <code>int m_value</code> field)</li>
+</ul></li>
+</ul>
+<h3 id="the-middle-ground-to-get-14-17-points-total">The middle ground (to get 14-17 points total)</h3>
+<p>Same as above and additionally:</p>
+<ul>
+<li><p>Allow for creating <code>option_parser</code> (together with all the options) with a <em>builder</em>, like this:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">auto</span> op <span class="op">=</span> option_parser_builder<span class="op">()</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span>with_option<span class="op">(</span><span class="ch">&#39;v&#39;</span><span class="op">,</span> <span class="st">&quot;verbose&quot;</span><span class="op">,</span> <span class="st">&quot;prints verbose diagnostics&quot;</span><span class="op">)</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span>with_int_option<span class="op">(</span><span class="ch">&#39;l&#39;</span><span class="op">,</span> <span class="st">&quot;level&quot;</span><span class="op">,</span> <span class="st">&quot;normalized output level&quot;</span><span class="op">)</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span>with_dbl_option<span class="op">(</span><span class="ch">&#39;f&#39;</span><span class="op">,</span> <span class="st">&quot;filter&quot;</span><span class="op">,</span> <span class="st">&quot;low-pass filter frequency&quot;</span><span class="op">)</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span>with_text_option<span class="op">(</span><span class="ch">&#39;p&#39;</span><span class="op">,</span> <span class="st">&quot;profile&quot;</span><span class="op">,</span> <span class="st">&quot;additional amplifier frequency profile file name&quot;</span><span class="op">)</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span>make<span class="op">();</span></span></code></pre></div></li>
+<li><p>Make <code>option_parser</code> work with some kind of a collection of command-line arguments as an input, not a single concatenated text line.</p></li>
+<li><p><code>option_parser</code> mustn’t be responsible for adding/ removing options - delegate this task to another class and pass its instance to <code>option_parser</code></p></li>
+<li><p>Add support for range-checking of numerical arguments of options. For instance an <code>option_parser</code> created with:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">auto</span> op <span class="op">=</span> option_parser_builder<span class="op">()</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>with_int_option<span class="op">(</span><span class="ch">&#39;l&#39;</span><span class="op">,</span> <span class="st">&quot;level&quot;</span><span class="op">,</span> <span class="st">&quot;normalized output level&quot;</span><span class="op">,</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span> <span class="dv">20</span><span class="op">}).</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>                make<span class="op">();</span></span></code></pre></div>
+<p>should be fine with:</p>
+<pre class="shell"><code>./my_app --level 18</code></pre>
+<p>but complain and show an error message with:</p>
+<pre class="shell"><code>./my_app --level 108</code></pre></li>
+<li><p>Add the possibility to configure the <code>help</code> option flags in <code>lib_arg</code>. Now only <code>-h</code> and <code>--help</code> are supported by default. These flags should be configurable by a programmer.</p></li>
+</ul>
+<h3 id="the-grand-design-to-get-17-20-points-total">The grand design (to get 17-20 points total)</h3>
+<p>Same as above and additionally:</p>
+<ul>
+<li><p>Wrap the arguments passed to the program in some class. Expose a singleton instance of this class in your program. It should provide read-only access to arguments:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">(</span><span class="dt">int</span> argc<span class="op">,</span> <span class="dt">char</span><span class="op">*</span> argv<span class="op">[]){</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    arguments<span class="op">::</span>initialize<span class="op">(</span>argc<span class="op">,</span> argv<span class="op">);</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// ...</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">std::</span>unique_ptr<span class="op">&lt;</span>option_parser<span class="op">&gt;</span> op <span class="op">=</span> <span class="op">...;</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    op<span class="op">.</span>parse<span class="op">(</span>arguments<span class="op">::</span>get<span class="op">());</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div></li>
+<li><p>Add support for <em>positional_arguments</em> to <code>option_parser</code> and its builder, perhaps like this:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">auto</span> op <span class="op">=</span> option_parser_builder<span class="op">()</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>with_int_option<span class="op">(</span><span class="ch">&#39;l&#39;</span><span class="op">,</span> <span class="st">&quot;level&quot;</span><span class="op">,</span> <span class="st">&quot;normalized output level&quot;</span><span class="op">,</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span> <span class="dv">20</span><span class="op">}).</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>with_text_positional<span class="op">(</span><span class="st">&quot;output&quot;</span><span class="op">)</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>make<span class="op">();</span></span></code></pre></div>
+<pre class="shell"><code>./my_app --help
+
+my_app [flags] &lt;OUTPUT&gt;
+
+&lt;OUTPUT&gt;        output file name
+
+flags:
+-h, --help      prints this help message
+-l, --level     normalized output level (integer in range 1-20)</code></pre></li>
+<li><p>Add support for default argument values. Each argument that a programmer of <code>lib_arg</code> configures should have a default value. If a program is invoked without some flag, the corresponding option should be added anyway to the parsing output with its default value.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="kw">auto</span> op <span class="op">=</span> option_parser_builder<span class="op">()</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>with_int_option<span class="op">(</span><span class="ch">&#39;l&#39;</span><span class="op">,</span> <span class="st">&quot;level&quot;</span><span class="op">,</span> <span class="st">&quot;normalized output level&quot;</span><span class="op">,</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span> <span class="dv">20</span><span class="op">},</span> <span class="dv">5</span><span class="op">).</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>with_text_positional<span class="op">(</span><span class="st">&quot;output&quot;</span><span class="op">,</span> stdout<span class="op">)</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>with_option<span class="op">(</span><span class="ch">&#39;v&#39;</span><span class="op">,</span> <span class="st">&quot;verbose&quot;</span><span class="op">,</span> <span class="st">&quot;verbose output&quot;</span><span class="op">,</span> <span class="kw">false</span><span class="op">)</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>                <span class="op">.</span>make<span class="op">();</span></span></code></pre></div>
+<pre class="shell"><code>./my_app --help
+
+my_app [flags] &lt;OUTPUT&gt;
+
+&lt;OUTPUT&gt;        output file name (default: stdout)
+
+flags:
+-h, --help      prints this help message
+-l, --level     normalized output level (integer in range 1-20, default: 5)
+-v --verbose    verbose output (default: off)</code></pre>
+<p>The following command:</p>
+<pre class="shell"><code>./my_app --verbose</code></pre>
+<p>will then result in the following parser output (all the options are included):</p>
+<ul>
+<li>level:int = 5</li>
+<li>verbose:bool = true</li>
+<li>output:string = stdout</li>
+</ul></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -fsanitize=address CMakeFiles/command_line_tool.dir/main.cpp.o CMakeFiles/command_line_tool.dir/program.cpp.o -o command_line_tool  lib_args/liblib_args.a 

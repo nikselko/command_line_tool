@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib_args.a CMakeFiles/lib_args.dir/src/lib_args.cpp.o
+/usr/bin/ranlib liblib_args.a

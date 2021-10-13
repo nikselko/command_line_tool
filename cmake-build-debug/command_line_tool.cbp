@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="command_line_tool"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib_args\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="command_line_tool">
+				<Option output="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/command_line_tool" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/inc"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 command_line_tool"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="command_line_tool/fast">
+				<Option output="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/command_line_tool" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/inc"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 command_line_tool/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_args">
+				<Option output="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/liblib_args.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/inc"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 lib_args"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lib_args/fast">
+				<Option output="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/liblib_args.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/inc"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 lib_args/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/d/UNI/NL/LED\ ACS/GDRIVE/LED\ UKR/2YEAR/Quarter\ 1/APC\ (Advanced\ Programming\ Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/src/lib_args.cpp">
+			<Option target="lib_args"/>
+		</Unit>
+		<Unit filename="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/main.cpp">
+			<Option target="command_line_tool"/>
+		</Unit>
+		<Unit filename="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/program.cpp">
+			<Option target="command_line_tool"/>
+		</Unit>
+		<Unit filename="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/program.h">
+			<Option target="command_line_tool"/>
+		</Unit>
+		<Unit filename="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib_args\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
