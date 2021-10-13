@@ -1,6 +1,5 @@
 ---
 title: Advanced Programming Concepts
-# author: Dawid Zalewski
 date: \today
 keywords: [C++, SOLID, OOP]
 
