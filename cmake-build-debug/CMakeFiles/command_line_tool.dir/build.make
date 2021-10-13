@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool"
+CMAKE_SOURCE_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/command_line_tool.dir/depend.make
@@ -68,29 +68,29 @@ include CMakeFiles/command_line_tool.dir/flags.make
 
 CMakeFiles/command_line_tool.dir/main.cpp.o: CMakeFiles/command_line_tool.dir/flags.make
 CMakeFiles/command_line_tool.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/command_line_tool.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/command_line_tool.dir/main.cpp.o -c "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/command_line_tool.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/command_line_tool.dir/main.cpp.o -c /mnt/c/Users/nikse/CLionProjects/command_line_tool/main.cpp
 
 CMakeFiles/command_line_tool.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/command_line_tool.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/main.cpp" > CMakeFiles/command_line_tool.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/nikse/CLionProjects/command_line_tool/main.cpp > CMakeFiles/command_line_tool.dir/main.cpp.i
 
 CMakeFiles/command_line_tool.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/command_line_tool.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/main.cpp" -o CMakeFiles/command_line_tool.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/nikse/CLionProjects/command_line_tool/main.cpp -o CMakeFiles/command_line_tool.dir/main.cpp.s
 
 CMakeFiles/command_line_tool.dir/program.cpp.o: CMakeFiles/command_line_tool.dir/flags.make
 CMakeFiles/command_line_tool.dir/program.cpp.o: ../program.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/command_line_tool.dir/program.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/command_line_tool.dir/program.cpp.o -c "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/program.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/command_line_tool.dir/program.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/command_line_tool.dir/program.cpp.o -c /mnt/c/Users/nikse/CLionProjects/command_line_tool/program.cpp
 
 CMakeFiles/command_line_tool.dir/program.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/command_line_tool.dir/program.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/program.cpp" > CMakeFiles/command_line_tool.dir/program.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/nikse/CLionProjects/command_line_tool/program.cpp > CMakeFiles/command_line_tool.dir/program.cpp.i
 
 CMakeFiles/command_line_tool.dir/program.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/command_line_tool.dir/program.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/program.cpp" -o CMakeFiles/command_line_tool.dir/program.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/nikse/CLionProjects/command_line_tool/program.cpp -o CMakeFiles/command_line_tool.dir/program.cpp.s
 
 # Object files for target command_line_tool
 command_line_tool_OBJECTS = \
@@ -105,7 +105,7 @@ command_line_tool: CMakeFiles/command_line_tool.dir/program.cpp.o
 command_line_tool: CMakeFiles/command_line_tool.dir/build.make
 command_line_tool: lib_args/liblib_args.a
 command_line_tool: CMakeFiles/command_line_tool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable command_line_tool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable command_line_tool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/command_line_tool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -117,6 +117,6 @@ CMakeFiles/command_line_tool.dir/clean:
 .PHONY : CMakeFiles/command_line_tool.dir/clean
 
 CMakeFiles/command_line_tool.dir/depend:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles/command_line_tool.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/nikse/CLionProjects/command_line_tool /mnt/c/Users/nikse/CLionProjects/command_line_tool /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles/command_line_tool.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/command_line_tool.dir/depend
 

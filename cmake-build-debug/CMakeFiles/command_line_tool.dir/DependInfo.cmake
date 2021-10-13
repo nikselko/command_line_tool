@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/main.cpp" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles/command_line_tool.dir/main.cpp.o"
-  "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/program.cpp" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles/command_line_tool.dir/program.cpp.o"
+  "/mnt/c/Users/nikse/CLionProjects/command_line_tool/main.cpp" "/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles/command_line_tool.dir/main.cpp.o"
+  "/mnt/c/Users/nikse/CLionProjects/command_line_tool/program.cpp" "/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles/command_line_tool.dir/program.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,7 +24,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/CMakeFiles/lib_args.dir/DependInfo.cmake"
+  "/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args/CMakeFiles/lib_args.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

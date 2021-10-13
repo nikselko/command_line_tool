@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/inc"
+CXX_INCLUDES = -I/mnt/c/Users/nikse/CLionProjects/command_line_tool/lib_args/inc
 
 CXX_FLAGS = -g -Wall -Wextra -Wpedantic -Werror -fno-omit-frame-pointer -Og -g -fsanitize=address -std=c++20
 

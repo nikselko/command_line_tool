@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/src/lib_args.cpp" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o"
+  "/mnt/c/Users/nikse/CLionProjects/command_line_tool/lib_args/src/lib_args.cpp" "/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

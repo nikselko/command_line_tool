@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool"
+CMAKE_SOURCE_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args//CMakeFiles/progress.marks"
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" 0
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args//CMakeFiles/progress.marks
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/clean
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/preinstall
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/preinstall
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib_args/CMakeFiles/lib_args.dir/rule:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/CMakeFiles/lib_args.dir/rule
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/CMakeFiles/lib_args.dir/rule
 .PHONY : lib_args/CMakeFiles/lib_args.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ lib_args: lib_args/CMakeFiles/lib_args.dir/rule
 
 # fast build rule for target.
 lib_args/fast:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/build
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/build
 .PHONY : lib_args/fast
 
 src/lib_args.o: src/lib_args.cpp.o
@@ -135,7 +135,7 @@ src/lib_args.o: src/lib_args.cpp.o
 
 # target to build an object file
 src/lib_args.cpp.o:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o
 .PHONY : src/lib_args.cpp.o
 
 src/lib_args.i: src/lib_args.cpp.i
@@ -143,7 +143,7 @@ src/lib_args.i: src/lib_args.cpp.i
 
 # target to preprocess a source file
 src/lib_args.cpp.i:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.i
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.i
 .PHONY : src/lib_args.cpp.i
 
 src/lib_args.s: src/lib_args.cpp.s
@@ -151,7 +151,7 @@ src/lib_args.s: src/lib_args.cpp.s
 
 # target to generate assembly for a file
 src/lib_args.cpp.s:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.s
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.s
 .PHONY : src/lib_args.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

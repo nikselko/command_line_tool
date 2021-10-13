@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool"
+CMAKE_SOURCE_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ lib_args/clean: lib_args/CMakeFiles/lib_args.dir/clean
 CMakeFiles/command_line_tool.dir/all: lib_args/CMakeFiles/lib_args.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/command_line_tool.dir/build.make CMakeFiles/command_line_tool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/command_line_tool.dir/build.make CMakeFiles/command_line_tool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=1,2,3 "Built target command_line_tool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target command_line_tool"
 .PHONY : CMakeFiles/command_line_tool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/command_line_tool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/command_line_tool.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/command_line_tool.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/command_line_tool.dir/clean:
 lib_args/CMakeFiles/lib_args.dir/all:
 	$(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib_args/CMakeFiles/lib_args.dir/build.make lib_args/CMakeFiles/lib_args.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=4,5 "Built target lib_args"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target lib_args"
 .PHONY : lib_args/CMakeFiles/lib_args.dir/all
 
 # Build rule for subdir invocation for target.
 lib_args/CMakeFiles/lib_args.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib_args/CMakeFiles/lib_args.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles 0
 .PHONY : lib_args/CMakeFiles/lib_args.dir/rule
 
 # Convenience name for target.

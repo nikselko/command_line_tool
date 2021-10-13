@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args
+# Install script for directory: /mnt/c/Users/nikse/CLionProjects/command_line_tool/lib_args
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

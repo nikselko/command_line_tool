@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool"
+CMAKE_SOURCE_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug"
+CMAKE_BINARY_DIR = /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include lib_args/CMakeFiles/lib_args.dir/depend.make
@@ -68,16 +68,16 @@ include lib_args/CMakeFiles/lib_args.dir/flags.make
 
 lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o: lib_args/CMakeFiles/lib_args.dir/flags.make
 lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o: ../lib_args/src/lib_args.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o"
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lib_args.dir/src/lib_args.cpp.o -c "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/src/lib_args.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o"
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lib_args.dir/src/lib_args.cpp.o -c /mnt/c/Users/nikse/CLionProjects/command_line_tool/lib_args/src/lib_args.cpp
 
 lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_args.dir/src/lib_args.cpp.i"
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/src/lib_args.cpp" > CMakeFiles/lib_args.dir/src/lib_args.cpp.i
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/nikse/CLionProjects/command_line_tool/lib_args/src/lib_args.cpp > CMakeFiles/lib_args.dir/src/lib_args.cpp.i
 
 lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_args.dir/src/lib_args.cpp.s"
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args/src/lib_args.cpp" -o CMakeFiles/lib_args.dir/src/lib_args.cpp.s
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/nikse/CLionProjects/command_line_tool/lib_args/src/lib_args.cpp -o CMakeFiles/lib_args.dir/src/lib_args.cpp.s
 
 # Object files for target lib_args
 lib_args_OBJECTS = \
@@ -89,19 +89,19 @@ lib_args_EXTERNAL_OBJECTS =
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/src/lib_args.cpp.o
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/build.make
 lib_args/liblib_args.a: lib_args/CMakeFiles/lib_args.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblib_args.a"
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args" && $(CMAKE_COMMAND) -P CMakeFiles/lib_args.dir/cmake_clean_target.cmake
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_args.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblib_args.a"
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args && $(CMAKE_COMMAND) -P CMakeFiles/lib_args.dir/cmake_clean_target.cmake
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_args.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib_args/CMakeFiles/lib_args.dir/build: lib_args/liblib_args.a
 .PHONY : lib_args/CMakeFiles/lib_args.dir/build
 
 lib_args/CMakeFiles/lib_args.dir/clean:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args" && $(CMAKE_COMMAND) -P CMakeFiles/lib_args.dir/cmake_clean.cmake
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args && $(CMAKE_COMMAND) -P CMakeFiles/lib_args.dir/cmake_clean.cmake
 .PHONY : lib_args/CMakeFiles/lib_args.dir/clean
 
 lib_args/CMakeFiles/lib_args.dir/depend:
-	cd "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/lib_args" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args" "/mnt/d/UNI/NL/LED ACS/GDRIVE/LED UKR/2YEAR/Quarter 1/APC (Advanced Programming Concepts)/Graded_Assignment/command_line_tool/cmake-build-debug/lib_args/CMakeFiles/lib_args.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/nikse/CLionProjects/command_line_tool /mnt/c/Users/nikse/CLionProjects/command_line_tool/lib_args /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args /mnt/c/Users/nikse/CLionProjects/command_line_tool/cmake-build-debug/lib_args/CMakeFiles/lib_args.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib_args/CMakeFiles/lib_args.dir/depend
 
